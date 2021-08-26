@@ -1,60 +1,52 @@
 
 def setup():
-    global circlePoints, squarePoints
     size(windowSize, windowSize * 9 / 8)
-    background(193,225,236)
-    
-    if (n <= 0) | (n >= 4000000):
-        textSize(20)
-        print("jo")
-        fill(255, 0, 0)
-        text("For the value of n, choose a number in [1, 4.000.000)", 10, windowSize * 1 / 2)
-        text("otherwise it takes too much time to execute the program.", 10, windowSize * 1 / 2 + 30)
-        return
+    background(250)
 
     # draw circle with radius of size of the window
     strokeWeight(.5)
+    fill(250)
     circle(0, windowSize, circleSize)
+
+
+def draw():
+    global circlePoints, squarePoints, n
     
+    if (n < 0):
+        textSize(20)
+        fill(255, 0, 0)
+        text("For the value of n, choose a number > 0", 10, windowSize * 1 / 2)
+        return
+
     # set stroke settings for points
     stroke(255, 0, 0)
-    if n < 50000:
-        strokeWeight(3)
-    elif n < 100000:
-        strokeWeight(2)
-    elif n < 1000000:
-        strokeWeight(1)
+    strokeWeight(1)
 
-    start = millis()    # starts counting time needed to draw all points
-    for _ in range(n):
+    for _ in range(100):
         # get x and y value
         x, y = spawnRandomCoords()        
         if ((x - 0)**2 + (y - windowSize)**2) <= (windowSize)**2:
-            circlePoints += 1
+            circlePoints += 1    # increase number of points that are in the circle
             stroke(0, 255, 0)
         else:
             stroke(255, 0, 0)
-        squarePoints += 1
+        squarePoints += 1    # points in the square
+        n += 1
 
         point(x, y)        # draw point
-    ending = millis()
 
     stroke(0)
-    strokeWeight(4)
-    line(0, windowSize, windowSize, windowSize)
+    strokeWeight(.5)
+    fill(193,225,236)
+    rect(0, windowSize, windowSize, windowSize - windowSize * 1 / 8)    # draw rectangle for showing value of pi
 
     textSize(windowSize / 40)
     fill(0, 102, 153)
     s = str(n) if n < 1000 else (str(n/1000) + "." + str(n)[-3:]) if n < 1000000 else (str(n/1000000) + "." + str(n)[-6:-3] + "." + str(n)[-3:])     # format string
-    text("value of pi after " + s + " iterations = "
-         + str(round(calcPi(circlePoints, squarePoints), 5))
-         + "  (~ " + str((ending-start)/1000) + "." 
-         + str((ending-start)%1000)[:2]
-         + " sec)",
+    text("Value of pi after " + s + " iterations ~ "
+         + str(round(calcPi(circlePoints, squarePoints), decimalPlaces)),
          10,
          windowSize + windowSize * 1 / 16)    # output text string
-
-    print(calcPi(circlePoints, squarePoints))    # prints more accurate current value of pi
 
 def calcPi(points_circle, points_square):
     '''
@@ -72,7 +64,8 @@ def spawnRandomCoords():
 
 if __name__ == '__main__':
     windowSize = 500    # size of the window
-    circleSize = 2 * windowSize    # diameter of the circle
+    circleSize = 2 * windowSize
     circlePoints = 0    # number of points in the circle
     squarePoints = 0    # number of points in the whole square including the circle    
-    n = 10000    # number of iterations
+    n = 0    # number of iterations
+    decimalPlaces = 8    # number of digits after decimal point
