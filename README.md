@@ -29,7 +29,7 @@ function approximiere_pi(punkteInsgesamt)
 ```
 # Weiteres
 
-Durch Erhöhung des Stichprobenumfangs (= die zu generierenden Punkte) stabilisert sich der Näherungswert von π und wird präziser (law of large numbers).
+Durch Erhöhung des Stichprobenumfangs (= die zu generierenden Punkte) wird π präziser (gegeben durch Gesetz der großen Zahlen).
 
 <p float='left'>
     <img src="https://user-images.githubusercontent.com/73491052/128614754-acf1a2fc-908c-4579-9d62-96185b1050f9.png" width=255 align=left>
