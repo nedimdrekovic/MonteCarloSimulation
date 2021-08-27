@@ -5,10 +5,14 @@ Dieses Projekt wurde in der Programmiersprache Processing im Python-Modus entwic
 Auf folgenden Link klicken, um Processing zu installieren: https://processing.org/download?PHPSESSID=8e6890fd30e3476408b69f203c217284 \
 Folgender Link verweist auf eine Einführung in die Processing-Umgebung: https://processing.org/environment
 
-Python-Modus installieren:
+## Python-Modus installieren:
+
 <p float='left'>
-    <img src="https://user-images.githubusercontent.com/73491052/128614754-acf1a2fc-908c-4579-9d62-96185b1050f9.png" width=255 align=left>
+    <img src="https://user-images.githubusercontent.com/73491052/131177136-39e19769-c711-43d3-b5b3-c1e5fac025c1.png" width=460 align=left>
+    <img src="https://user-images.githubusercontent.com/73491052/131176244-8c58958d-e122-41b3-8641-f59f2661342e.png" width=465 align=left>
 </p>
+
+
 
 
 
