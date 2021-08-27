@@ -12,9 +12,7 @@ Folgender Link verweist auf eine Einführung in die Processing-Umgebung: https:/
     <img src="https://user-images.githubusercontent.com/73491052/131176244-8c58958d-e122-41b3-8641-f59f2661342e.png" width=360 align=left>
 </p>
 
-
-
-
+<br></br>
 
 # Berechnung von PI mit der MonteCarlo Simulation
 
