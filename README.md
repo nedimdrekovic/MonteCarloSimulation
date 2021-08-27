@@ -1,4 +1,17 @@
 
+# Installation Processing
+Dieses Projekt wurde in der Programmiersprache Processing im Python-Modus entwickelt.
+
+Auf folgenden Link klicken, um Processing zu installieren: https://processing.org/download?PHPSESSID=8e6890fd30e3476408b69f203c217284 \
+Folgender Link verweist auf eine Einführung in die Processing-Umgebung: https://processing.org/environment
+
+Python-Modus installieren:
+<p float='left'>
+    <img src="https://user-images.githubusercontent.com/73491052/128614754-acf1a2fc-908c-4579-9d62-96185b1050f9.png" width=255 align=left>
+</p>
+
+
+
 # Berechnung von PI mit der MonteCarlo Simulation
 
 Bei diesem Projekt handelt es sich um eine einfache Visualisierung zur probabilistischen Berechung der Kreiszahl Pi. Hierbei handelt es sich um einen Monte Carlo Simulation (https://de.wikipedia.org/wiki/Monte-Carlo-Simulation).
