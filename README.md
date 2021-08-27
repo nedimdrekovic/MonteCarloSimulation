@@ -1,4 +1,3 @@
-
 # Installation Processing
 Dieses Projekt wurde in der Programmiersprache Processing im Python-Modus entwickelt.
 
