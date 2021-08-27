@@ -8,8 +8,8 @@ Folgender Link verweist auf eine Einführung in die Processing-Umgebung: https:/
 ## Python-Modus installieren:
 
 <p float='left'>
-    <img src="https://user-images.githubusercontent.com/73491052/131177136-39e19769-c711-43d3-b5b3-c1e5fac025c1.png" width=460 align=left>
-    <img src="https://user-images.githubusercontent.com/73491052/131176244-8c58958d-e122-41b3-8641-f59f2661342e.png" width=465 align=left>
+    <img src="https://user-images.githubusercontent.com/73491052/131177136-39e19769-c711-43d3-b5b3-c1e5fac025c1.png" width=360 align=left>
+    <img src="https://user-images.githubusercontent.com/73491052/131176244-8c58958d-e122-41b3-8641-f59f2661342e.png" width=360 align=left>
 </p>
 
 
